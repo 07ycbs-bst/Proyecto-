@@ -1,0 +1,74 @@
+body {
+  padding-top: 70px;
+}
+
+.hero-img {
+  height: 85vh;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.carousel-caption {
+  bottom: 35%;
+}
+
+.service-card {
+  border: none;
+  transition: 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.cta {
+  background: linear-gradient(rgba(0,76,153,0.9), rgba(0,76,153,0.9)),
+              url('../img/cta.jpg') center/cover;
+}
+
+footer {
+  font-size: 14px;
+}
+
+
+/* Fondo suave para el badge de precio */
+.bg-success-soft {
+    background-color: rgba(25, 135, 84, 0.1);
+}
+
+/* Efecto al pasar el mouse sobre la card */
+.card.h-100 {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card.h-100:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1) !important;
+}
+
+/* Ajuste para que el texto largo no rompa el diseño */
+.card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Permite que la card crezca según el contenido */
+#lista-servicios .card {
+    height: auto !important;
+    min-height: 150px;
+}
+
+/* Estilo para que el precio resalte sin ser invasivo */
+.badge.bg-light.text-success {
+    font-weight: 800;
+    padding: 8px 12px;
+}
+
+/* Asegura que el texto de descripción no se amontone */
+.card-body h5 {
+    line-height: 1.3;
+    word-break: break-word; /* Rompe palabras largas si es necesario */
+}
